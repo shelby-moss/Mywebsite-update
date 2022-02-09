@@ -1,0 +1,97 @@
+:root {
+  --text-color: #1b1c22;
+  --h1-color: #627e91;
+  --h2-color: #a75d25;
+  --h3-color: #a53f2b;
+  --hover-color: #b8c4bb;
+  --active-color: #e8f7ee;
+}
+
+img {
+  width: 25%;
+  height: auto;
+}
+
+picture img {
+  width: 100%;
+}
+
+.form img {
+  width: 200px;
+  height: auto;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--text-color);
+  line-height: 1.5;
+  padding: 1.5rem;
+}
+
+h1 {
+  font-family: "Fira Sans", sans-serif;
+  text-transform: capitalize;
+  color: var(--h1-color);
+  line-height: 1;
+}
+
+h2 {
+  font-family: "Fira Sans", sans-serif;
+  text-transform: capitalize;
+  color: var(--h2-color);
+  line-height: 1;
+}
+
+h3 {
+  font-family: "Fira Sans", sans-serif;
+  text-transform: capitalize;
+  color: var(--h3-color);
+  line-height: 1;
+}
+
+a {
+  display: inline-block;
+  user-select: none;
+  color: var(--text-color);
+  font-size: 0.75em;
+}
+
+a:hover {
+  color: var(--hover-color);
+  font-size: 1em;
+}
+
+a:active {
+  color: var(--active-color);
+}
+
+.button {
+  background-color: var(--hover-color);
+  color: #fff;
+  padding: 1em 1.5em;
+  border: 1px solid #b8c4bb;
+  cursor: pointer;
+
+  transition: background-color 500ms ease, color 500ms ease,
+    transform 900ms ease;
+}
+
+.button:hover {
+  color: var(--text-color);
+  background-color: var(--active-color);
+
+  transform: scale(1.02);
+}
+
+main {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 50rem;
+}
+
+aside {
+  padding: 0.3rem 1rem;
+  margin: 1rem;
+  background-color: var(--active-color);
+  float: right;
+}
